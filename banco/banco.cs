@@ -12,14 +12,14 @@ namespace banco
 {
     public partial class buttonDepositar : Form
     {
-        cliente cliente;
+        Cliente cliente;
 
 
         public buttonDepositar()
         {
             InitializeComponent();
 
-            this.cliente = new cliente();
+            this.cliente = new Cliente();
 
             labelValorSaldo.Text = Convert.ToString(cliente.saldo);
         }
@@ -65,6 +65,7 @@ namespace banco
             {
                 double valor = Convert.ToDouble(textBoxDeposito.Text);
                 cliente.Creditar(valor);
+                labelValorSaldo.Text = cliente.saldo.ToString("0.00");
 
                 textBoxDeposito.Clear();
 
@@ -100,7 +101,7 @@ namespace banco
                 cliente.Debitar(valor);
 
 
-                labelValorSaldo.Text = cliente.saldo.ToString();
+                labelValorSaldo.Text = cliente.saldo.ToString("0.00");
 
                 textoBoxSacar.Clear();
                 MessageBox.Show("deposito realizado com sucesso: ");

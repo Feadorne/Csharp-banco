@@ -36,17 +36,17 @@
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelSifrao = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelValorSaldo = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelNomeCliente = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.labelOpcoes = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBoxDeposito = new System.Windows.Forms.TextBox();
             this.botaoDepositar = new System.Windows.Forms.Button();
+            this.textBoxDeposito = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.buttonSacar = new System.Windows.Forms.Button();
             this.textoBoxSacar = new System.Windows.Forms.TextBox();
-            this.labelValorSaldo = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -61,7 +61,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(639, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(383, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,25 +79,25 @@
             // novoToolStripMenuItem
             // 
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             // 
             // salvarToolStripMenuItem
             // 
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.salvarToolStripMenuItem.Text = "Salvar";
             // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // fecharToolStripMenuItem
             // 
             this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
-            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.fecharToolStripMenuItem.Text = "Fechar";
             // 
             // labelSifrao
@@ -126,6 +126,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Saldo";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // labelValorSaldo
+            // 
+            this.labelValorSaldo.AutoSize = true;
+            this.labelValorSaldo.Font = new System.Drawing.Font("Swis721 Blk BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorSaldo.Location = new System.Drawing.Point(64, 16);
+            this.labelValorSaldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelValorSaldo.Name = "labelValorSaldo";
+            this.labelValorSaldo.Size = new System.Drawing.Size(77, 29);
+            this.labelValorSaldo.TabIndex = 3;
+            this.labelValorSaldo.Text = " 0,00";
+            this.labelValorSaldo.Click += new System.EventHandler(this.labelValorSaldo_Click);
             // 
             // groupBox2
             // 
@@ -173,13 +185,6 @@
             this.groupBox3.Text = "Depósito";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // textBoxDeposito
-            // 
-            this.textBoxDeposito.Location = new System.Drawing.Point(7, 21);
-            this.textBoxDeposito.Name = "textBoxDeposito";
-            this.textBoxDeposito.Size = new System.Drawing.Size(268, 23);
-            this.textBoxDeposito.TabIndex = 0;
-            // 
             // botaoDepositar
             // 
             this.botaoDepositar.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -190,6 +195,13 @@
             this.botaoDepositar.Text = "Depositar";
             this.botaoDepositar.UseVisualStyleBackColor = true;
             this.botaoDepositar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBoxDeposito
+            // 
+            this.textBoxDeposito.Location = new System.Drawing.Point(7, 21);
+            this.textBoxDeposito.Name = "textBoxDeposito";
+            this.textBoxDeposito.Size = new System.Drawing.Size(268, 23);
+            this.textBoxDeposito.TabIndex = 0;
             // 
             // groupBox4
             // 
@@ -222,24 +234,12 @@
             this.textoBoxSacar.Size = new System.Drawing.Size(268, 23);
             this.textoBoxSacar.TabIndex = 0;
             // 
-            // labelValorSaldo
-            // 
-            this.labelValorSaldo.AutoSize = true;
-            this.labelValorSaldo.Font = new System.Drawing.Font("Swis721 Blk BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValorSaldo.Location = new System.Drawing.Point(64, 16);
-            this.labelValorSaldo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelValorSaldo.Name = "labelValorSaldo";
-            this.labelValorSaldo.Size = new System.Drawing.Size(77, 29);
-            this.labelValorSaldo.TabIndex = 3;
-            this.labelValorSaldo.Text = " 0,00";
-            this.labelValorSaldo.Click += new System.EventHandler(this.labelValorSaldo_Click);
-            // 
             // buttonDepositar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(639, 375);
+            this.ClientSize = new System.Drawing.Size(383, 329);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.labelOpcoes);
